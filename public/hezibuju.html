@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>盒子布局</title>
+    <style type="text/css">
+    .box {
+        border: 1px solid red;
+        width: 400px;
+        height: 400px;
+        display: flex;
+
+        justify-content: flex-end;
+        justify-content: space-between;
+    }
+
+    .box>div {
+        width: 40px;
+        height: 40px;
+    }
+    </style>
+</head>
+
+<body>
+    <h3>盒子布局</h3>
+    <div class="box">
+        <div style="background: red;"></div>
+        <div style="background: blue;"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+    <style>
+    #myDIV {
+        width: 1000px;
+        height: 200px;
+        background: red;
+        animation: mymove 5s infinite;
+        /*Safari 和 Chrome:*/
+        -webkit-animation: mymove 5s infinite;
+    }
+
+    @keyframes mymove {
+        from {
+            background-color: red;
+        }
+
+        to {
+            background-color: blue;
+        }
+    }
+
+    /*Safari 和 Chrome:*/
+    @-webkit-keyframes mymove {
+        from {
+            background-color: red;
+        }
+
+        to {
+            background-color: blue;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <p>背景颜色逐渐地从红色变化到蓝色：<p>
+            <div id="myDIV"></div>
+            <p>在 CSS 中，background-position 属性是 <em>可动画化（animatable）</em> 的。</p>
+            <p>Internet Explorer 10、Firefox 和 Opera 支持 CSS 动画。</p>
+            <p>Safari 和 Chrome 通过带有前缀 -webkit-，支持 CSS 动画。</p>
+</body>
+
+</html>
